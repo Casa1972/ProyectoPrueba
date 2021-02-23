@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>POO Proyecto</title>
+        <link
+            rel="stylesheet"
+            href="../node_modules/normalize.css/normalize.css"
+        />
+        <link rel="stylesheet" href="./css/estilos.css" />
+    </head>
+    <body>
+        <main>
+            <h1 id="titulo" class="titulo">CENTRO DE ESTUDIOS</h1>
+
+            <!-- FORMULARIO -->
+            <form id="formulario">
+                <label>
+                    Nombre:
+                    <input type="text" name="nombreCurso" required />
+                </label>
+                <label>
+                    Imagen:
+                    <input type="text" name="rutaImagen" required />
+                </label>
+                <label>
+                    Horas:
+                    <input type="number" name="cantidadHoras" required />
+                </label>
+                <button type="submit">Nuevo Curso</button>
+            </form>
+
+            <!-- GRID de Cursos -->
+            <section id="curso" class="cursos"></section>
+            <form id="inscripcionAlumno" class="inscripcion">
+                <label>Nombre del curso al que te quieres inscribir</label><input type="text" name="nombreCurso" required/> <br>
+                <label>Nombre</label><input type="text" name="nombre" required/> <br>
+                <label>Apellido</label><input type="text" name="apellido" required/> <br>
+                <label>DNI</label><input type="text" name="dni" required/> <br>
+                <label>Email</label><input type="text" name="email" required/> <br>
+                <button>Inscribir</button>
+            </form> <br>
+            <form id="inscripcionProfe" class="inscripcion">
+                <label>Nombre del curso al que vas a dar clase</label><input type="text" name="nombreCurso" required/> <br>
+                <label>Nombre</label><input type="text" name="nombre" required/> <br>
+                <label>Apellido</label><input type="text" name="apellido" required/> <br>
+                <label>DNI</label><input type="text" name="dni" required/> <br>
+                <label>Email</label><input type="text" name="email" required/> <br>
+                <label>Numero de colegiado</label><input type="text" name="numColeg" required/> <br>
+                <button>Inscribir</button>
+            </form>
+
+            <!--FORMULARIO INSCRIPCION-->
+            <!--<div id="ventanaInscr" class="ventanita">
+                <div class="contenido">
+                    <span class="close">×</span> <h2>Inscripción al curso</h2>
+                    <p>gkyuhg</p>
+                </div>
+            </div>-->
+            <!--FORMULARIO PROFESOR-->
+            <!--<div id="ventanaProfe" class="ventanita">
+                <div class="contenido">
+                    <span class="close">×</span> <h2>Modal</h2>
+                    <p>Se ha desplegado el modal y bloqueado el scroll del body!</p>
+                </div>
+            </div> -->
+        </main>
+
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
